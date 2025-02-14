@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" class="theme-dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/026e1f3067.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div class="is-justifiecontent-center is-align-content-center">
-        <label class="label">Email</label>
-        <div class="control has-icons-left has-icons-right">
-        <input class="input is-danger" type="email" placeholder="Email input">
-        <span class="icon is-small is-left">
-        <i class="fas fa-envelope"></i>
-    </span>
-    <span class="icon is-small is-right">
-      <i class="fas fa-exclamation-triangle"></i>
-    </span>
-    <input class="input is-danger" type="text" placeholder="Danger input"/>
-    <label for="textarea is-link">Your words of encuregment</label>
-    <textarea class="textarea is-link"placeholder="Link textarea"></textarea>
+    <div class="columns is-mobile is-centered">
+        <div class="column is-half">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+                <input class="input is-danger" type="email" placeholder="Email input">
+                <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                </span>
+                <span class="icon is-small is-right">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </span>
+                <br>
+                <label for="input is is-danger">Name</label>
+                <input class="input is-danger" type="text" placeholder="Name" />
+                <br><br>
+                <label for="input is is-link">Last Name</label>
+                <input type="text" class="input is is-link" placeholder="Last Name">
+                <br><br>
+                <label for="textarea is-link">Your words of encuregment</label>
+                <textarea class="textarea is-link" placeholder="Link textarea"></textarea>
+                <div class="control">
+                    <label class="radio">
+                      <input type="radio" name="answer" />
+                      True red white and blue fredome lover 
+                    </label>
+                    <label class="radio">
+                      <input type="radio" name="answer"/>
+                      Comunist
+                    </label>
+                  </div>
+                  <div class="field is-grouped">
+                    <div class="control">
+                      <button class="button is-link">Submit</button>
+                    </div>
+                    <div class="control">
+                      <button class="button is-danger">Cancel</button>
+                    </div>
+                  </div>
+                  <a href="https://www.usa.gov/"><img src="Great_Seal_of_the_United_States_(obverse).svg.png" alt="The american Seal"> </a>
+            </div>
+        </div>
+        
 </body>
+
 </html>
