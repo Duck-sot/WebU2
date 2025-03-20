@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="theme-light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <script src="https://kit.fontawesome.com/026e1f3067.js" crossorigin="anonymous"></script>
     <script src="Satan.js"></script>
+    <script src="Voter-fraud-the-game.js"></script>
 </head>
 <body>
   <nav class="navbar" role="navigation">
@@ -31,8 +32,18 @@
   </nav>
     <div class="columns is-mobile is-centered">
         <div class="column is-half">
-            <img class="box" src="pic/united-states-election-vote-box-free-png.png" alt="">
+            <img class="box" src="pic/united-states-election-vote-box-free-png.png" alt="" onclick="pointAdd()"
+            <p>Votes: <span id="score">0</span></p>
+            <br>
+            <h2>Shop</h2>
+            <label for="extra vote"><span id="exCost">10 </span>Votes</label>
+            <button class="button" id="extra vote" onclick="buyVotes()">Extra vote</button>
+            <label for="vote multi"><span id="multi">100</span> Votes</label>
+            <button class="button" id="vote multi" onclick="buyMulti()">Vote multiplier</button>
+            <label for="win"><span>183000000</span> Votes</label>
+            <button class="button">GG WP</button>
         </div>
     </div>
+    
 </body>
 </html>
